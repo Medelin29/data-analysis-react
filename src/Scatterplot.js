@@ -61,10 +61,11 @@ function ScatterPlot() {
         } else {
           // If slider is being turned on, apply current slider value filtering
           updateScatterData(sliderValue);
+          setSliderValue(0);
         }
         return newVisibility;
       });
-  };
+    };
 
     const handleSliderChange = (event, newValue) => {
         setSliderValue(newValue);
